@@ -450,7 +450,7 @@ img {
 }
 
 .about{
-  background-color: var(--container-color);
+  background-color: var(--body-color);
   transition: background-color 0.4s;
 }
 
