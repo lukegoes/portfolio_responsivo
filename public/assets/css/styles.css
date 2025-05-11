@@ -481,23 +481,23 @@ img {
 }
 
 .about__shadow{
-  width: 150px;
+  width: 180px;
   height: 385px;
   background-color: var(--white-color);
-  top: -2.5rem;
-  right: -3rem;
+  top: -3rem;
+  right: -2rem;
   border-bottom: 4px solid var(--first-color);
   transition: background-color 0.4s;
 }
 
 .about__perfil .geometric-box{
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1rem;
+  right: 1rem;
 }
 
 .about__line{
   filter: invert(1);
-  right: 1.5rem;
+  right: -0.5rem;
   top: 6rem;
   width: 50px;
   transition: filter 0.4s;
@@ -507,8 +507,8 @@ img {
   width: 40px;
   height: 40px;
   background-color: var(--first-color);
-  right: 2.5rem;
-  bottom: 1.5rem;
+  right: 1rem;
+  bottom: 1rem;
 }
 
 .about__info{
@@ -669,7 +669,7 @@ img {
 
 .projects__button{
   position: absolute;
-  left: 14rem;
+  left: 12rem;
   bottom: -1rem;
   padding: 1rem;
 }
