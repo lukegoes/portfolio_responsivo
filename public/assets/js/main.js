@@ -38,12 +38,45 @@ const shadowHeader = () => {
 }
 window.addEventListener('scroll', shadowHeader)
 
-/*=============== SHADOW HEADER ===============*/
-
-
 /*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById('contact-form')
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  const button = document.getElementById('contact-button');
+  const buttonText = document.getElementById('button-text');
+
+  // Salvar texto original (caso queira restaurar depois)
+  const originalText = buttonText.textContent;
+
+  // Mostrar carregando com spinner
+  buttonText.textContent = 'Enviando...';
+  const loader = document.createElement('span');
+  loader.classList.add('loader');
+  button.appendChild(loader);
+
+  emailjs.sendForm('service_ygatsli', 'template_2967zvr', '#contact-form', '9gJJssq10F4uRIsKq')
+    .then(() => {
+      buttonText.textContent = 'Enviado ✅';
+      loader.remove();
+      contactForm.reset();
+
+      setTimeout(() => {
+        buttonText.textContent = originalText;
+      }, 4000);
+    }, () => {
+      buttonText.textContent = 'Erro ❌';
+      loader.remove();
+
+      setTimeout(() => {
+        buttonText.textContent = originalText;
+      }, 4000);
+    });
+};
 
 
+contactForm.addEventListener('submit', sendEmail)
 /*=============== SHOW SCROLL UP ===============*/ 
 
 
