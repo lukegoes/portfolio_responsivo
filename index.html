@@ -22,7 +22,7 @@
 
         <div class="nav__menu" id="nav-menu">
           <span class="nav__title">Menu</span>
-          <h2 class="nav__name">Lucas</h2>
+          <h2 class="nav__name">Lucas Goes</h2>
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#home" class="nav__link">Home</a>
@@ -30,6 +30,10 @@
 
             <li class="nav__item">
               <a href="#about" class="nav__link">Sobre mim</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Serviços</a>
             </li>
 
             <li class="nav__item">
@@ -47,6 +51,7 @@
         </div>
 
         <div class="nav__buttons">
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
           <div class="nav__toggle" id="nav-toggle">
             <i class="ri-menu-4-line"></i>
           </div>
@@ -129,55 +134,63 @@
       </section>
 
       <section class="about__section" id="about">
-      <div class="about__container container grid">
-        <h2 class="section__title-1">
-          <span>Sobre mim.</span>
-        </h2>
+        <div class="about__container container grid">
+          <h2 class="section__title-1">
+            <span>Sobre mim.</span>
+          </h2>
 
-        <div class="about__perfil">
-          <div class="about__image">
-            <img src="/assets/img/about-perfil.jpg" alt="" class="about__img" />
+          <div class="about__perfil">
+            <div class="about__image">
+              <img
+                src="/assets/img/about-perfil.jpg"
+                alt=""
+                class="about__img"
+              />
+            </div>
+
+            <div class="about__shadow">
+              <div class="geometric-box"></div>
+              <img
+                src="assets/img/random-lines.svg"
+                alt=""
+                class="about__line"
+              />
+              <div class="about__box"></div>
+            </div>
           </div>
 
-          <div class="about__shadow">
-            <div class="geometric-box"></div>
-            <img src="assets/img/random-lines.svg" alt="" class="about__line" />
-            <div class="about__box"></div>
+          <div class="about__info">
+            <p class="about__description">
+              Apaixonado por criar <b>Web Pages</b> com <b>foco em UX/UI</b>,
+              tenho diversos clientes que me contratam para desenvolver sites
+              para empresas e pessoas físicas.
+            </p>
+
+            <ul class="about__list">
+              <li class="about__item">
+                <b>Minhas habilidades:</b> HTML, CSS, JavaScript, React, React
+                Native, Git & GitHub, Bootstrap, Figma, Pacote Adobe.
+              </li>
+            </ul>
+
+            <div class="about__buttons">
+              <a href="#contact" class="button">
+                <i class="ri-send-plane-fill"></i> Fale comigo
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/lukgoes/"
+                target="_blank"
+                class="button__ghost"
+              >
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+            </div>
           </div>
         </div>
-
-        <div class="about__info">
-          <p class="about__description">
-            Apaixonado por criar <b>Web Pages</b> com <b>foco em UX/UI</b>,
-            tenho diversos clientes que me contratam para desenvolver sites para
-            empresas e pessoas físicas.
-          </p>
-
-          <ul class="about__list">
-            <li class="about__item">
-              <b>Minhas habilidades:</b> HTML, CSS, JavaScript, React, React
-              Native, Git & GitHub, Bootstrap, Figma, Pacote Adobe.
-            </li>
-          </ul>
-
-          <div class="about__buttons">
-            <a href="#contact" class="button">
-              <i class="ri-send-plane-fill"></i> Fale comigo
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/lukgoes/"
-              target="_blank"
-              class="button__ghost"
-            >
-              <i class="ri-linkedin-box-fill"></i>
-            </a>
-          </div>
-        </div>
-      </div>
       </section>
 
-      <section class="services section">
+      <section class="services section" id="services">
         <h2 class="section__title-2">
           <span>Serviços.</span>
         </h2>
@@ -519,10 +532,31 @@
       </section>
     </main>
 
-    <footer class="footer" id="footer"></footer>
+    <footer class="footer" id="footer">
+      <div class="footer__container container grid">
+        <ul class="footer__links">
+          <li>
+            <a href="#about" class="footer__link">Sobre mim.</a>
+          </li>
+          <li>
+            <a href="#services" class="footer__link">Serviços.</a>
+          </li>
+          <li>
+            <a href="#projects" class="footer__link">Projetos.</a>
+          </li>
+        </ul>
+      </div>
 
-    <div id="root"></div>
+      <span class="footer__copy">
+        &#169; <a href="">Lucas Goes.</a> Todos os direitos reservados
+      </span>
+    </footer>
 
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
+
+    <script src="/assets/js/scrollreveal.min.js"></script>
     <script src="/assets/js/main.js"></script>
     <script>
       window.va =
