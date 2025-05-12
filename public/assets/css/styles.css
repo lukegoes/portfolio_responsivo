@@ -544,6 +544,7 @@ background-color: var(--container-color);
   right: -2rem;
   border-bottom: 4px solid var(--first-color);
   transition: background-color 0.4s;
+  z-index: -1;
 }
 
 .about__perfil .geometric-box{
